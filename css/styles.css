@@ -43,6 +43,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--color-iris);
+  display: flex;
+  align-items: center;
   /* column-gap: 76px; */
 }
 
@@ -179,6 +181,7 @@ img {
   font-style: normal;
   font-weight: 400;
   color: var(--color-slate);
+  display: flex;
 }
 
 .contact-link {
@@ -191,6 +194,7 @@ img {
   color: #434455;
   margin-left: auto;
   display: flex;
+  padding-left: 24px, 0;
 }
 
 .hero {
