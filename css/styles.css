@@ -23,13 +23,23 @@ body {
 }
 
 .container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0, auto;
-  padding-right: 15px;
-  padding-left: 15px;
+ width: 1158px;
+ /*margin: 0 auto;
+ padding: 0 15px;*/
+ outline: 2px solid tomato;
 }
+
+img,
+a {
+  display: block;
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* header styles */
 
 .page-header-container {
   display: flex;
@@ -56,6 +66,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-white);
+  padding-bottom: 48px;
 }
 
 .description-title {
@@ -80,12 +91,22 @@ body {
   color: var(--color-slate);
 }
 
-.list {
-  list-style: none;
+.our-advantages-section {
+  padding: 120px 0;
+}
+
+.our-advantages-list {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-list-item {
+ flex-basis: calc((100%-72px)/4);
 }
 
 .logo {
   font-family: "Raleway", sans-serif;
+  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -93,7 +114,8 @@ body {
   text-transform: uppercase;
   color: var(--color-iris);
   margin-right: 76px;
-
+  display: flex;
+  align-self: center;
 }
 
 .logo-part-dark {
@@ -104,9 +126,7 @@ body {
   color: var(--color-cloud);
 }
 
-.link {
-  text-decoration: none;
-}
+
 
 h1,
 h2,
@@ -128,13 +148,24 @@ img {
   display: block;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
 /* HEADER */
 
 .page-header {
   display: flex;
   align-items: center;
-  border-bottom-style: solid;
-}
+  border-bottom: solid;
+ }
 
 .page-navigation {
   display: flex;
@@ -143,6 +174,7 @@ img {
 
 .menu {
   display: flex;
+  align-items: center;
   column-gap: 40px;
 }
 
@@ -160,6 +192,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   color: var(--color-navy-blue);
+  padding: 24px 0;
 }
 
 .menu-link:hover,
@@ -194,7 +227,8 @@ img {
   color: #434455;
   margin-left: auto;
   display: flex;
-  padding-left: 24px, 0;
+  padding-left: 40px;
+ 
 }
 
 .hero {
@@ -203,16 +237,10 @@ img {
 
 .logo-header-light {
   color: var(--color-navy-blue);
-}
+ }
 
 .modal-open-btn {
   font-family: "Roboto", sans-serif;
-  display: block;
-  height: 56px;
-  border: none;
-  border-radius: 4px;
-  padding: 16px 32px;
-  min-width: 169px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -221,8 +249,13 @@ img {
   text-align: center;
   color: var(--color-white);
   background-color: var(--color-iris);
-  margin: 0 auto;
+  margin: 48px auto 0 auto;
   cursor: pointer;
+  display: block;
+  height: 56px;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
 }
 
 .modal-open-btn:hover,
@@ -254,6 +287,7 @@ img {
 
 .page-footer {
   background-color: var(--color-navy-blue-modal);
+  padding: 100px 0;
 }
 
 .footer-text {
@@ -270,10 +304,17 @@ img {
   cursor: pointer;
   color: var(--color-iris);
   background-color: var(--color-cloud);
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #E7E9FC;
+  border-radius: 4px;
 }
 
 .filter-button:hover,
 .filter-button:focus {
   color: var(--color-white);
   background-color: var(--color-ocean);
+  border: 1px solid transparent;
 }
