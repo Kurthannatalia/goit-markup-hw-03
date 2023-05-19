@@ -54,7 +54,7 @@ section {
   color: var(--color-iris);
   display: flex;
   align-items: center;
-  /* column-gap: 76px; */
+  margin-right: auto;
 }
 
 .hero-tittle {
@@ -65,8 +65,17 @@ section {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-white);
-  padding-bottom: 48px;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
+
+font-size: 56px;
+line-height: 1.07;
+text-align: center;
+letter-spacing: 0.02em;
+color:var(--color-white);
 
 .modal-open-btn
 
@@ -110,6 +119,7 @@ img {
 
 .link {
   text-decoration: none;
+  color: inherit;
 }
 
 .list {
@@ -160,19 +170,11 @@ img {
   color: #404bbf;
 }
 
-.contact-link:hover,
-.contact-link:focus {
-  color: #404bbf;
-}
-
-.contact {
-  font-style: normal;
-  margin-left: auto;
-}
-
 .contact-item {
   font-style: normal;
   font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--color-slate);
   display: flex;
 }
@@ -188,10 +190,27 @@ img {
   margin-left: auto;
   display: flex;
   padding-left: 40px;
- }
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
+}
+
+.contact {
+  font-style: normal;
+  margin-left: auto;
+}
+
+.body-container {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-slate);
+  background-color: var(--color-white);
+}
 
  /* HERO SECTION*/
 .hero {
+  padding: 188px 0;
   background-color: var(--color-navy-blue-modal);
 }
 
@@ -270,8 +289,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-iris);
-  display: inline-block;
-  margin-bottom: 16px;
+  margin-right: 76px;
 }
 
 .logo-part-dark {
