@@ -23,8 +23,9 @@ body {
 }
 
 .container {
-  padding: 32px 16px;
-  text-align: center;
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 img,
@@ -415,18 +416,26 @@ img {
 
 /* Portfolio Page */
 
-.portfolio-page {
-padding: 96px 0 120px;
-}
+/*
+.portfolio-content {}*/
 
 .portfolio-container {
-  padding: 32px 16px;
+padding: 32px 16px;
   border: 1px solid var(--color-cornflower);
   border-top: none;
 }
 
+.portfolio-page {
+padding: 96px 0 120px;
+}
+
 .filter-button-list {
-  font-family: "Roboto", sans-serif;
+margin-bottom: 72px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+ /* font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -436,10 +445,10 @@ padding: 96px 0 120px;
   cursor: pointer;
   padding: 12px 24px;
   border: 1px solid var(--color-cornflower);
-  border-radius: 4px;
-}
+  border-radius: 4px;*/
 
-.filter-button-list:hover {
+
+/*.filter-button-list:hover {
   color: var(--main-bagt-color);
   background-color: var(--color-ocean);
   border: 1px solid transparent;
@@ -447,10 +456,13 @@ padding: 96px 0 120px;
 .filter-button-list:focus {
   color: var(--main-bagt-color);
   background-color: var(--color-ocean);
-  border: 1px solid transparent;}
+  border: 1px solid transparent;}*/
 
 .button-list-item {
-  font-family: "Roboto" sans-serif;
+  display: flex;
+    justify-content: center;
+    gap: 24px;
+/*font-family: "Roboto" sans-serif;
   background-color: var(--color-iris);
   color: var(--main-bagt-color);
   font-weight: 500;
@@ -465,7 +477,8 @@ padding: 96px 0 120px;
   border: none;
   border-radius: 4px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
+  
 }
 
 .button-list-item:hover {
@@ -476,17 +489,36 @@ padding: 96px 0 120px;
   background-color: var(--color-ocean);}
 
 .project-list {
-width: calc((100% - 48px) / 3);
+  width: calc((100% - 48px) / 3);
+  margin-right: 24px;
+  margin-bottom: 48px;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.project-list:nth-last-child(-n+3){margin-bottom: 0;}
+.project-list:nth-child(3n){margin-right: 0;}
 
 .projects-card-list {
 color: var(--color-grey, );
 background-color: var(--color-white);
 border-radius: 0px 0px 4px 4px;
+flex-wrap: wrap;
 }
 
 .filter-button {
   font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--color-iris);
+    background-color: var(--color-cloud);
+    cursor: pointer;
+    padding: 12px 24px;
+    border: 1px solid var(--color-cornflower);
+    border-radius: 4px;
+ /* font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -499,7 +531,7 @@ border-radius: 0px 0px 4px 4px;
   align-items: center;
   text-align: center;
   border: 1px solid #E7E9FC;
-  border-radius: 4px;
+  border-radius: 4px;*/
 }
 
 .filter-button:hover,
@@ -509,6 +541,6 @@ border-radius: 0px 0px 4px 4px;
   border: 1px solid transparent;
 }
  /* Є ПИТАННЯ*/
-.list-link {
+/*.list-link {
   flex-basis: calc((100% - 3 * 24px) / 4);
-}
+}*/
