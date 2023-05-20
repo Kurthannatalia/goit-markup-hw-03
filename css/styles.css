@@ -285,7 +285,9 @@ img {
 }
 
 .advantages-list-item {
-  flex-basis: calc(100%-72px)/4);
+
+  flex-basis: calc((100% - 72px) / 4);
+
 }
 
 .logo {
@@ -298,6 +300,8 @@ img {
   text-transform: uppercase;
   color: var(--color-iris);
   margin-right: 76px;
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
 .logo-part-dark {
