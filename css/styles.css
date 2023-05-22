@@ -424,9 +424,6 @@ img {
 
 /* Portfolio Page */
 
-/*
-.portfolio-content {}*/
-
 .portfolio-container {
   padding: 32px 16px;
   border: 1px solid var(--color-cornflower);
@@ -443,50 +440,11 @@ img {
   justify-content: center;
   gap: 24px;
 }
- /* font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--color-iris);
-  background-color: var(--color-cloud);
-  cursor: pointer;
-  padding: 12px 24px;
-  border: 1px solid var(--color-cornflower);
-  border-radius: 4px;*/
-
-
-/*.filter-button-list:hover {
-  color: var(--main-bagt-color);
-  background-color: var(--color-ocean);
-  border: 1px solid transparent;
-
-.filter-button-list:focus {
-  color: var(--main-bagt-color);
-  background-color: var(--color-ocean);
-  border: 1px solid transparent;}*/
 
 .button-list-item {
   display: flex;
-    justify-content: center;
-    gap: 24px;
-/*font-family: "Roboto" sans-serif;
-  background-color: var(--color-iris);
-  color: var(--main-bagt-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  color: var(--main-bagt-color);
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  border: none;
-  border-radius: 4px;
-  margin-left: auto;
-  margin-right: auto;*/
-  
+  justify-content: center;
+  gap: 24px; 
 }
 
 .button-list-item:hover {
@@ -504,39 +462,26 @@ img {
 .project-list:nth-child(3n){margin-right: 0;}
 
 .projects-card-list {
-color: var(--color-grey, );
-background-color: var(--color-white);
-border-radius: 0px 0px 4px 4px;
-flex-wrap: wrap;
-gap: 48px 24px;
+ color: var(--color-grey, );
+ background-color: var(--color-white);
+ border-radius: 0px 0px 4px 4px;
+ flex-wrap: wrap;
+ gap: 48px 24px;
 }
 
 .filter-button {
-  font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--color-iris);
-    background-color: var(--color-cloud);
-    cursor: pointer;
-    padding: 12px 24px;
-    border: 1px solid var(--color-cornflower);
-    border-radius: 4px;
- /* font-family: "Roboto", sans-serif;
+   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  cursor: pointer;
   color: var(--color-iris);
   background-color: var(--color-cloud);
+  cursor: pointer;
   padding: 12px 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  border: 1px solid #E7E9FC;
-  border-radius: 4px;*/
+  border: 1px solid var(--color-cornflower);
+  border-radius: 4px;
+
 }
 
 .filter-button:hover,
@@ -545,7 +490,4 @@ gap: 48px 24px;
   background-color: var(--color-ocean);
   border: 1px solid transparent;
 }
- /* Є ПИТАННЯ*/
-/*.list-link {
-  flex-basis: calc((100% - 3 * 24px) / 4);
-}*/
+ 
