@@ -43,7 +43,6 @@ a {
 .page-header-container {
   display: flex;
   align-items: center;
-  margin: 0, auto;
 }
 
 .page-navigation {
@@ -55,36 +54,6 @@ a {
   display: flex;
   align-items: center;
   margin-right: auto;
-}
-
-.hero-tittle {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--color-white);
-  max-width: 496px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 48px;
-}
-
-.modal-open-btn {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  display: block;
-  align-items: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  min-width: 169px;
-  padding: 16px 32px;
-  background: #4d5ae5;
-  border-radius: 4px;
-  margin: 48px auto 0 auto;
 }
 
   /* ADDRESS*/
@@ -197,7 +166,6 @@ img {
   color: #434455;
   margin-left: auto;
   display: flex;
-  padding-left: 40px;
 }
 
 .contact-link:hover,
@@ -217,17 +185,23 @@ img {
 }
 
  /* HERO SECTION*/
-.hero {
-  padding: 188px 0;
-  background-color: var(--color-navy-blue-modal);
-}
 
-.logo-header-light {
-  color: var(--color-navy-blue);
+ .hero-tittle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
  }
 
-.modal-open-btn {
-  font-family: "Roboto" sans-serif;
+ .modal-open-btn {
+  font-family: "Roboto", sans-serif;
   background-color: var(--color-iris);
   color: var(--color-white);
   font-weight: 500;
@@ -242,14 +216,21 @@ img {
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
+ }
+
+.hero {
+  padding: 188px 0;
+  background-color: var(--color-navy-blue-modal);
 }
 
-.modal-open-btn:hover,
-.modal-open-btn:focus {
-  background-color: var(--color-ocean);
-}
+.logo-header-light {
+  color: var(--color-navy-blue);
+ }
 
-
+ .modal-open-btn:hover,
+ .modal-open-btn:focus {
+   background-color: var(--color-ocean);
+ }
 /* FIRST SECTION */
 
 .description-text {
@@ -290,7 +271,7 @@ img {
 
 }
 
-.logo {
+.header-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -299,11 +280,22 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-iris);
+  display: inline-block;
   margin-right: 76px;
+}
+
+.footer-logo{
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-iris);
   margin-bottom: 16px;
   display: inline-block;
 }
-
 .logo-part-dark {
   color: var(--color-navy-blue);
 }
@@ -326,8 +318,9 @@ img {
 }
 
 .our-services-section {
- background-color: var(--color-cloud);
+ background-color: var(--color-white);
  padding: 120px 0;
+ padding-top: 0px;
 }
 
 .our-services-list {
@@ -364,13 +357,11 @@ img {
 
 .our-team-list {
  color: var(--color-grey, );
- background-color: var(--color-white);
  font-size: 36px;
  line-height: 1.11;
  text-align: center;
  letter-spacing: 0.02em;
  text-transform: capitalize;
- margin-bottom: 72px;
  display: flex;
  gap: 24px;
 }
@@ -424,17 +415,17 @@ img {
 .portfolio-content {}*/
 
 .portfolio-container {
-padding: 32px 16px;
+  padding: 32px 16px;
   border: 1px solid var(--color-cornflower);
   border-top: none;
 }
 
 .portfolio-page {
-padding: 96px 0 120px;
+ padding: 96px 0 120px;
 }
 
 .filter-button-list {
-margin-bottom: 72px;
+  margin-bottom: 72px;
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -494,8 +485,6 @@ margin-bottom: 72px;
 
 .project-list {
   width: calc((100% - 48px) / 3);
-  margin-right: 24px;
-  margin-bottom: 48px;
 }
 
 .project-list:nth-last-child(-n+3){margin-bottom: 0;}
@@ -506,6 +495,7 @@ color: var(--color-grey, );
 background-color: var(--color-white);
 border-radius: 0px 0px 4px 4px;
 flex-wrap: wrap;
+gap: 48px 24px;
 }
 
 .filter-button {
