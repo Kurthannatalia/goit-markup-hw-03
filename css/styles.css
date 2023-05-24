@@ -487,3 +487,37 @@ img {
   border: 1px solid transparent;
 }
  
+.media-text {
+  margin-bottom: 16px;
+  padding-left: 28px;
+  font-weight: 500;
+  color: var(--color-white)
+}
+
+/*social media icons*/
+
+.media-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.media-list-icon {
+fill: var(--color-cloud)
+}
+
+.media-list-link {
+ display: flex;
+ justify-content: center;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background-color: var(--color-iris);
+ align-items: center;
+}
+
+.media-list-link:hover,
+.media-list-link:focus {
+  background-color: var(--color-green);
+}
