@@ -551,3 +551,37 @@ fill: var(--color-cloud)
 .advantages-img-icon {
   margin: 24px 100px;
 }
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-info{
+ margin-right: 120px;
+}
+
+.list-media {
+ display: flex;
+ justify-content: center;
+ gap: 16px;
+ margin-top: 8px;
+}
+
+/*.list-media-item {
+
+}*/
+
+.footer-list-link {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-iris);
+  align-items: center;
+}
+
+.footer-list-link:hover,
+.footer-list-link:focus {
+  background-color: var(--color-green);
+}
