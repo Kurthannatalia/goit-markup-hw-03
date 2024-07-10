@@ -184,10 +184,15 @@ gap: 40px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-slate);
+  padding: 120px 0;
 }
 
 .visually-hidden {
   visibility: hidden;
+  position: absolute;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
 }
 
 .features-list {
@@ -241,7 +246,7 @@ gap: 40px;
 }
 
 .images {
- display: block
+ display: block;
 }
 
 .teams-list {
@@ -268,8 +273,8 @@ gap: 40px;
   letter-spacing: 0.02em;
   color: var(--color-slate);
   background-color: var(--color-white);
-  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
 
 .img-container {
@@ -333,12 +338,14 @@ gap: 40px;
 .list-service {
   width: calc((100% - 48px) / 3);
 
+
 }
 .service-container {
   padding: 32px 16px;
   border: 1px solid var(--color-cornflower);
   border-top: none;
-  padding: 32px 0;
+
+  padding: 32px 16px
 }
 
 .description-title {
