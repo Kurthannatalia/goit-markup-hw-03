@@ -124,9 +124,14 @@ button {
 }
 
 .header-contact-item {
-display: flex;
-gap: 40px;
-}
+    display: flex;
+    gap: 40px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    color: var(--color-slate);
+  }
 
 /* HERO SECTION */
 .section-hero {
@@ -448,14 +453,6 @@ ol {
   font-style: normal;
 }
 
-.header-contact-item {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  font-weight: 400;
-  color: var(--color-slate);
-}
-
 .header-contact-link {
   font-family: var(--main-font-family);
   font-weight: 400;
@@ -472,7 +469,6 @@ ol {
 .logo-header-light {
   color: var(--color-navy-blue);
 }
-
 
 .section-title {
   font-weight: 700;
