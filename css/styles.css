@@ -44,16 +44,13 @@ button {
 /* HEADER*/
 .page-header {
   margin: 0 auto;
+  border-bottom: 1px solid var(--color-cornflower);
 }
 
 .container-header {
   display: flex;
   align-items: center;
   margin: 0 auto;
-}
-
-.header {
-  border-bottom: 1px solid var(--color-cornflower);
 }
 
 .page-navigation {
@@ -88,6 +85,11 @@ button {
   margin-right: 76px;
 }
 
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
 .menu-item {
   letter-spacing: 0.02em;
   line-height: 1.5;
@@ -119,6 +121,11 @@ button {
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--color-ocean);
+}
+
+.header-contact-item {
+display: flex;
+gap: 40px;
 }
 
 /* HERO SECTION */
@@ -179,7 +186,7 @@ button {
   color: var(--color-slate);
 }
 
-.hidden-title {
+.visually-hidden {
   visibility: hidden;
 }
 
@@ -190,6 +197,8 @@ button {
   letter-spacing: 0.02em;
   color: var(--color-slate);
   background-color: var(--color-white);
+  display: flex;
+  gap: 24px;
 }
 
 .features-list-item {
@@ -198,6 +207,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-slate);
+  width: calc((100% - 72px) / 4);
 }
 
 .features-menu {
@@ -223,10 +233,15 @@ button {
 .our-team-section {
   background-color: var(--color-white);
   padding: 120px 0;
+ 
 }
 
-.class-container{
+.class-container {
 
+}
+
+.images {
+ display: block
 }
 
 .teams-list {
@@ -242,6 +257,8 @@ button {
 
 .list-img-list {
   background-color: var(--color-white);
+  display: flex;
+  gap: 24px;
 }
 
 .image-item-list {
@@ -251,11 +268,14 @@ button {
   letter-spacing: 0.02em;
   color: var(--color-slate);
   background-color: var(--color-white);
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .img-container {
   padding: 32px 16px;
   text-align: center;
+  padding: 32px 0;
  }
 
 .about-list-link {
@@ -264,6 +284,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
+  margin-bottom: 8px;
 }
 
 .text {
@@ -277,6 +298,8 @@ button {
 .our-portfolio {
   color: var(--color-navy-blue);
   background-color: var(--color-white);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .portfolio-content {
@@ -290,6 +313,7 @@ button {
   text-align: center;
   text-transform: capitalize;
   color: var(--color-navy-blue);
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -300,11 +324,22 @@ button {
   letter-spacing: 0.04em;
   color: var(--color-iris, #4d5ae5);
   background-color: var(--color-white, #ffffff);
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.list-service {
+  width: calc((100% - 48px) / 3);
+
 }
 .service-container {
   padding: 32px 16px;
   border: 1px solid var(--color-cornflower);
-  border-top: none;}
+  border-top: none;
+  padding: 32px 0;
+}
 
 .description-title {
   font-weight: 500;
@@ -312,6 +347,8 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
+  margin-bottom: 8px;
+
 }
 
 .portfolio-desk {
