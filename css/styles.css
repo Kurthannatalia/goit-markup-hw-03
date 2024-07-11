@@ -76,6 +76,10 @@ button {
   margin-right: 76px;
 }
 
+.header-logo-part-dark {
+  color: var(--color-navy-blue);
+} 
+
 .header-logo-link {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -125,6 +129,10 @@ button {
   color: var(--color-ocean);
 }
 
+.header-contact {
+  font-style: normal;
+}
+
 .header-contact-item {
   display: flex;
   gap: 40px;
@@ -132,6 +140,15 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 400;
+  color: var(--color-slate);
+}
+
+.header-contact-link {
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--color-slate);
 }
 
@@ -250,7 +267,7 @@ button {
 
 /*SECOND SECTION*/
 .our-team-section {
-  background-color: var(--color-white);
+  background-color: var(--color-cloud);
   padding: 120px 0;
   width: 100%;
 }
@@ -321,11 +338,11 @@ button {
   width: 100%;
 }
 
-.portfolio-content {
+/*.portfolio-content {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-}
+}*/
 
 .portfolio-title {
   font-weight: 700;
@@ -422,10 +439,6 @@ button {
   margin-bottom: 16px;
 }
 
-.header-logo-part-dark {
-  color: var(--color-navy-blue);
-}
-
 .footer-logo-part-light {
   color: var(--color-cloud);
 }
@@ -438,67 +451,4 @@ p,
 ul,
 ol {
   margin: 0;
-}
-
-
-/* HEADER */
-
-
-.page-navigation {
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--color-iris, #4d5ae5);
-}
-
-
-.header-contact {
-  font-style: normal;
-}
-
-.header-contact-link {
-  font-family: var(--main-font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--color-slate);
-}
-
-.hero {
-  background-color: var(--color-navy-blue-modal);
-}
-
-.logo-header-light {
-  color: var(--color-navy-blue);
-}
-
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--color-navy-blue-modal);
-}
-
-.our-team-section {
-  background-color: var(--color-cloud);
-}
-
-.card {
-  background-color: var(--color-white);
-}
-
-.page-footer {
-  background-color: var(--color-navy-blue);
-}
-
-.text-footer {
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: var(--color-cloud, #f4f4fd);
 }
