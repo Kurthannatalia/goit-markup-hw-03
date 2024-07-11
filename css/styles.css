@@ -284,7 +284,6 @@ ul,ol {
 .our-team-section {
   background-color: var(--color-cloud);
   padding: 120px 0;
-  width: 100%;
 }
 
 
@@ -350,7 +349,6 @@ ul,ol {
   background-color: var(--color-white);
   padding-top: 120px;
   padding-bottom: 120px;
-  width: 100%;
 }
 
 .portfolio-content {
