@@ -29,6 +29,21 @@ button {
   cursor: pointer;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,ol {
+  margin: 0;
+  padding: 0;
+}
+
 /* studio page */
 .body-container {
   font-family: "Roboto", sans-serif;
@@ -199,7 +214,7 @@ button {
 
 /*FIRST SECTION*/
 .section-container {
-  width: 100%;
+
 }
 
 .features {
@@ -445,18 +460,3 @@ button {
   color: var(--color-cloud);
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-ul, {
- max-width: 264;
- font-weight: 400;
- font-size: 16px;
- line-height: 150%;
- letter-spacing: 0.02em;
- color: #f4f4fd;
- margin: 0;
- padding:0;
-}
